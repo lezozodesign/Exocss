@@ -33,7 +33,7 @@ h1 {
     background-color: rgb(73, 73, 228);
     width: 200px;
     height: 200px;
-    animation: zozo 2s linear infinite alternate;
+    animation: zozo 2s linear infinite ;
     position: relative;
 }
 
@@ -101,11 +101,11 @@ h1 {
 
 /* --- Exo 6 --- */
 .cercle {
-    border: 8px solid white;
+    border: 10px solid white;
     border-left-color: black;
-    border-bottom-color: blue;
-    width: 50px;
-    height: 50px;
+    border-right-color: blue;
+    width: 100px;
+    height: 100px;
     margin-left:  150px ;
     border-radius: 50%;
     box-shadow:rgb(73, 73, 228) ;
@@ -128,7 +128,7 @@ h1 {
         40% {
             transform: rotate(90deg);
             border-left-color: rgb(179, 36, 36);
-        border-bottom-color: rgb(192, 12, 138);
+        border-top-color: rgb(192, 12, 138);
     
         }
         60% {
@@ -139,7 +139,7 @@ h1 {
         80% {
             transform: rotate(260deg);
             border-left-color: black;
-        border-bottom-color: blue;
+        border-top-color: blue;
         }
 
         100% {
