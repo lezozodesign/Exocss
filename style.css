@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* --- Exo 1 --- */
+h1 {
+    text-align: center;
+}
+
+.button {
+    display: grid ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(73, 73, 228);
+    color: white;
+    margin-left: 200px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: red;
+    }
+}
+
+/* --- Exo 2 --- */
+.carré {
+    background-color: rgb(73, 73, 228);
+    width: 200px;
+    height: 200px;
+    animation: zozo 2s linear infinite alternate;
+    position: relative;
+}
+
+@keyframes zozo {
+    from {
+        left: 0;
+    }
+    to {
+        left: 500px;
+    }
+}
+
+.turbo {
+    width: 200px;
+    height: auto;
+    margin-left: 200px;
+    animation: sunday 4s linear infinite ;
+}
+
+@keyframes sunday {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* --- Exo 4 --- */
+.abel {
+    animation: abel 15s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-size: 200px;
+    opacity: 0;
+}
+
+
+@keyframes abel {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* --- Exo 5 --- */
+.sansjs {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-left: 100px ;
+    background-color: rgb(73, 73, 228);
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.1s ease;
+    color: white;
+}
+
+.sansjs:active {
+    transform: scale(1.5);
+}
+
+/* --- Exo 6 --- */
+.cercle {
+    border: 8px solid white;
+    border-left-color: black;
+    border-bottom-color: blue;
+    width: 50px;
+    height: 50px;
+    margin-left:  150px ;
+    border-radius: 50%;
+    box-shadow:rgb(73, 73, 228) ;
+    animation: lazare 0.5s linear infinite ;
+}
+
+@keyframes lazare {
+        0% {
+            transform: rotate(0deg);
+            border-left-color: rgb(169, 29, 29);
+        border-bottom-color: rgb(0, 255, 13);
+    
+        }
+        20% {
+            transform: rotate(0deg);
+            border-left-color: rgb(130, 7, 56);
+        border-bottom-color: rgb(12, 131, 66);
+    
+        }
+        40% {
+            transform: rotate(90deg);
+            border-left-color: rgb(179, 36, 36);
+        border-bottom-color: rgb(192, 12, 138);
+    
+        }
+        60% {
+            transform: rotate(180deg);
+            border-left-color: rgba(11, 80, 159, 0);
+        border-bottom-color: bisque;
+        }
+        80% {
+            transform: rotate(260deg);
+            border-left-color: black;
+        border-bottom-color: blue;
+        }
+
+        100% {
+            transform: rotate(360deg);
+            border-left-color: black;
+        border-bottom-color: blue;
+        }
+}
+
+/* --- Exo 7 --- */
+.defilement {
+    animation: zozo2 1s linear infinite ;
+    position: relative;
+    margin-left: 100px;
+   
+}
+
+.col {
+ background-color:  rgb(73, 73, 228);
+ height: 200px;
+}
+
+@keyframes zozo2 {
+    from {
+        top: 0;
+    }
+    to {
+        top: 100px;
+    }
+}
+
+/* --- Exo 8 --- */
+.turbo2  {
+    width: 200px;
+    height: auto;
+    margin-left: 200px;
+}
+
+.turbo2:hover {
+    transition: transform 0.5s ease-in ;
+    transform: scale(1.2);
+}
+
+/* --- Exo 9 --- */
+.danger {
+    color: RED;
+    font-size: 200px;
+    animation: clignote 1s infinite ;
+}
+
+@keyframes clignote {
+    0% ,100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+/* --- Exo 10 --- */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideInRight 5s ease-out infinite;
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
